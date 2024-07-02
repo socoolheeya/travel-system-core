@@ -16,7 +16,10 @@ public class PropertyEnums {
         STAR2("2STAR"),
         STAR3("3STAR"),
         STAR4("4STAR"),
-        STAR5("5STAR");
+        STAR5("5STAR"),
+        STAR6("6STAR"),
+        STAR7("7STAR"),
+        NONE(null);
 
         private final String code;
 
