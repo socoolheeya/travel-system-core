@@ -10,7 +10,6 @@ import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 import lombok.experimental.SuperBuilder;
 
-import java.util.HashSet;
 import java.util.Set;
 
 @Getter
@@ -26,7 +25,7 @@ public class PropertySearchCriteria extends BaseSearchCriteria {
     Set<CommonSupplierEnums> suppliers;
 
     @Builder.Default
-    Boolean isEnabled = true;
+    Boolean isActive = true;
 
     @Builder.Default
     Boolean canBookSameDay = false;

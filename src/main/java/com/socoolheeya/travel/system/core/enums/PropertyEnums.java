@@ -38,4 +38,18 @@ public class PropertyEnums {
     public enum ImageType {
         MAIN, AMENITY, FACILITY, ROOM, EXTERIOR
     }
+
+    /**
+     * 숙소 정산 타입
+     */
+    @Getter
+    @AllArgsConstructor
+    public enum SettlementType {
+        TRANSFER("CT101", "송금"),
+        VCC("CT102", "가상카드"),
+        CENTRAL_TRAVEL_CARD("CT103", "법인카드");
+
+        private final String code;
+        private final String description;
+    }
 }
