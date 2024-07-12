@@ -12,7 +12,7 @@ import java.util.Objects;
 @AllArgsConstructor
 public enum CommonSupplierEnums {
 
-    TAVI(1, "DC", "Tide Square"),
+    MACARON(1, "DC", "Tide Square"),
     DERBY(2, "DS","Derby"),
     TL_LINCOLN(3, "TL", "Tl_Lincoln"),
     TRIPANZEE(4, "TZ", "Tripanzee"),
