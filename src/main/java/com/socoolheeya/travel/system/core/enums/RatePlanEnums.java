@@ -45,4 +45,10 @@ public class RatePlanEnums {
     public enum CommissionStandard {
         PERCENT, VALUE
     }
+
+    @Getter
+    @AllArgsConstructor
+    public enum  CommissionMode {
+        ALL, WEEKDAY_WEEKEND
+    }
 }

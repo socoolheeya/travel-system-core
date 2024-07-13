@@ -52,4 +52,33 @@ public class PropertyEnums {
         private final String code;
         private final String description;
     }
+
+    /**
+     * 커미션 요금 타입
+     */
+    @Getter
+    @AllArgsConstructor
+    public enum CommissionPriceType {
+        DEPOSIT_PRICE("CPT01", "예치금"),
+        SELLING_PRICE_BEFORE_COMMISSION("CPT02", "판매가(수수료 전)"),
+        SELLING_PRICE_AFTER_COMMISSION("CPT03", "판매가(수수료 후)"),
+        ALL_PRICE("CPT04", "전체요금");
+
+        private final String code;
+        private final String description;
+
+        @JsonCreator
+        public static CommissionPriceType from(String code) {
+            return Arrays.stream(CommissionPriceType.values())
+                    .filter(x -> x.code.equals(code))
+                    .findFirst()
+                    .orElse(null);
+        }
+    }
+
+    @Getter
+    @AllArgsConstructor
+    public enum  CommissionMode {
+        ALL, WEEKDAY_WEEKEND
+    }
 }
