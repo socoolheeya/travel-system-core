@@ -87,6 +87,7 @@ public enum ErrorEnums {
     BAD_REQUEST(400, HttpStatus.BAD_REQUEST, "잘못된 요청입니다"),
     REQUEST_TIMEOUT(408, HttpStatus.REQUEST_TIMEOUT, "요청 시간이 초과하였습니다"),
     PAYLOAD_TOO_LARGE(413, HttpStatus.PAYLOAD_TOO_LARGE, "페이로드가 너무 큽니다"),
+    TOO_MANY_REQUESTS(429, HttpStatus.TOO_MANY_REQUESTS, "요청이 너무 많습니다"),
 
     /**
      * 5xx 공통 서버 에러
